@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura | Collaborative Design, Unleashed.</title>
+    
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Load Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        // Tailwind Configuration (must remain here to define custom classes before use)
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'], 
+                    },
+                    colors: {
+                        'aura-primary': '#6366f1', // Indigo-500
+                        'aura-secondary': '#8b5cf6', // Violet-500
+                        'aura-dark': '#1e293b', // Slate-800
+                        'aura-light': '#f8fafc', // Slate-50
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-white text-aura-dark">
+
+    <!-- 1. HEADER & NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#top" class="flex items-center text-2xl font-bold text-aura-dark">
+                        <i data-lucide="sparkles" class="w-6 h-6 mr-2 text-aura-primary"></i>
+                        Aura
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-aura-primary transition duration-150">Features</a>
+                    <!-- Pricing link now points to an anchor on this same page -->
+                    <a href="#pricing" class="text-gray-600 hover:text-aura-primary transition duration-150 font-bold">Pricing</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-aura-primary transition duration-150">Reviews</a>
+                    <a href="#contact" class="text-gray-600 hover:text-aura-primary transition duration-150">Contact</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="hidden sm:inline-block text-sm font-medium text-gray-600 hover:text-aura-primary transition duration-150">Log In</a>
+                    <a href="#" class="px-5 py-2 text-sm font-semibold rounded-xl bg-aura-primary hover:bg-indigo-600 text-white transition duration-300 card-shadow">
+                        Start Free Trial
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. HERO SECTION -->
+        <section id="top" class="hero-bg pt-20 pb-32 sm:py-32 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <!-- Headline Content -->
+                <div class="max-w-3xl mx-auto">
+                    <h1 class="text-5xl sm:text-7xl font-extrabold leading-tight tracking-tighter mb-6">
+                        <span class="text-gradient">Design Together,</span> Faster Than Ever.
+                    </h1>
+                    <p class="text-xl text-gray-500 mb-10 max-w-2xl mx-auto">
+                        Aura is the collaborative platform that transforms design chaos into crystal-clear, actionable results. Real-time feedback, revolutionary mockups, zero overlap.
+                    </p>
+                    <!-- Main CTA Group -->
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="px-8 py-3 text-lg font-bold rounded-xl bg-aura-primary hover:bg-indigo-600 text-white transition duration-300 transform hover:scale-105 card-shadow">
+                            Get Started Free
+                        </a>
+                        <a href="#" class="px-8 py-3 text-lg font-bold rounded-xl bg-white border border-gray-300 hover:bg-gray-100 text-gray-700 transition duration-300 transform hover:scale-105 card-shadow">
+                            View Demo
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Mockup Image/Illustration -->
+                <div class="mt-20">
+                    <div class="bg-white p-2 sm:p-4 rounded-3xl inline-block card-shadow shadow-indigo-200/50">
+                        <!-- Placeholder for a sleek application interface -->
+                        <img 
+                            src="https://placehold.co/1200x650/e0e7ff/6366f1?text=Aura+App+Interface+Mockup" 
+                            alt="Aura collaborative application interface screenshot" 
+                            class="rounded-2xl w-full max-w-6xl mx-auto border border-gray-100"
+                            onerror="this.onerror=null;this.src='https://placehold.co/1200x650/e0e7ff/6366f1?text=Aura+App+Interface+Mockup';"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. FEATURES SECTION -->
+        <section id="features" class="py-24 sm:py-32 bg-aura-light">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-aura-secondary bg-aura-secondary/10 px-3 py-1 rounded-full">
+                        Core Platform
+                    </span>
+                    <h2 class="mt-4 text-4xl sm:text-5xl font-extrabold text-aura-dark">
+                        Tools Built for Modern Teams
+                    </h2>
+                    <p class="mt-4 text-xl text-gray-500 max-w-3xl mx-auto">
+                        Simplify complex workflows, integrate seamlessly, and elevate every design decision with unified collaboration.
+                    </p>
+                </div>
+
+                <!-- Features Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Feature Card 1 -->
+                    <div class="bg-white p-8 rounded-2xl card-shadow transition duration-300 hover:scale-[1.02] border-t-4 border-aura-primary">
+                        <div class="p-3 inline-flex items-center justify-center rounded-full bg-aura-primary/10 text-aura-primary mb-5">
+                            <i data-lucide="git-branch" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-aura-dark mb-3">Version Control</h3>
+                        <p class="text-gray-500">
+                            Never lose a single change. Our branching system allows safe exploration and easy rollback to any previous state.
+                        </p>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="bg-white p-8 rounded-2xl card-shadow transition duration-300 hover:scale-[1.02] border-t-4 border-aura-secondary">
+                        <div class="p-3 inline-flex items-center justify-center rounded-full bg-aura-secondary/10 text-aura-secondary mb-5">
+                            <i data-lucide="message-square" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-aura-dark mb-3">Live Annotations</h3>
+                        <p class="text-gray-500">
+                            Comment directly on design elements in real-time. Say goodbye to confusing screenshots and endless email chains.
+                        </p>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="bg-white p-8 rounded-2xl card-shadow transition duration-300 hover:scale-[1.02] border-t-4 border-aura-primary">
+                        <div class="p-3 inline-flex items-center justify-center rounded-full bg-aura-primary/10 text-aura-primary mb-5">
+                            <i data-lucide="infinity" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-aura-dark mb-3">API Integration</h3>
+                        <p class="text-gray-500">
+                            Connect Aura to all your favourite tools: Jira, Slack, Trello, and custom internal systems using our powerful API.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. TESTIMONIAL & SOCIAL PROOF SECTION -->
+        <section id="testimonials" class="py-24 sm:py-32 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
+                    
+                    <!-- Text Content and Testimonial -->
+                    <div class="lg:col-span-6 mb-12 lg:mb-0">
+                        <span class="text-xs font-semibold uppercase tracking-widest text-aura-primary bg-aura-primary/10 px-3 py-1 rounded-full">
+                            Why Choose Aura?
+                        </span>
+                        <h2 class="mt-4 text-4xl sm:text-5xl font-extrabold text-aura-dark leading-tight">
+                            The Only Platform Built to Eliminate Friction.
+                        </h2>
+                        <p class="mt-6 text-lg text-gray-500">
+                            We observed the pain points of scaling creative teams and engineered a solution that lets designers focus on creativity, not administrative overhead.
+                        </p>
+                        
+                        <!-- Testimonial Card -->
+                        <div class="mt-10 p-6 bg-aura-light rounded-2xl border-l-4 border-aura-secondary card-shadow">
+                            <i data-lucide="quote" class="w-8 h-8 text-aura-secondary mb-3"></i>
+                            <p class="text-lg italic text-gray-700">
+                                "Since switching to Aura, our design-to-development handoff time dropped by 40%. The clarity is unmatched."
+                            </p>
+                            <div class="mt-4 flex items-center">
+                                <img 
+                                    class="w-10 h-10 rounded-full object-cover" 
+                                    src="https://placehold.co/40x40/c7d2fe/6366f1?text=A" 
+                                    alt="Avatar of Alex Chen"
+                                    onerror="this.onerror=null;this.src='https://placehold.co/40x40/c7d2fe/6366f1?text=A';"
+                                />
+                                <div class="ml-3">
+                                    <p class="text-sm font-semibold text-aura-dark">Alex Chen</p>
+                                    <p class="text-xs text-gray-500">CTO, Zenith Innovations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mockup/Image on the right -->
+                    <div class="lg:col-span-6 flex justify-center lg:justify-end">
+                        <div class="bg-gray-100 p-8 rounded-3xl card-shadow w-full max-w-lg aspect-square flex items-center justify-center">
+                            <!-- Placeholder for a sleek diagram or graphic -->
+                            <img 
+                                src="https://placehold.co/450x450/e0e7ff/6366f1?text=Workflow+Diagram" 
+                                alt="Workflow optimization diagram" 
+                                class="rounded-2xl w-full h-full object-cover border border-white"
+                                onerror="this.onerror=null;this.src='https://placehold.co/450x450/e0e7ff/6366f1?text=Workflow+Diagram';"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PRICING SECTION (Re-integrated content) -->
+        <section id="pricing" class="py-24 sm:py-32 bg-aura-dark text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-aura-secondary bg-aura-secondary/20 px-3 py-1 rounded-full">
+                        Transparent Pricing
+                    </span>
+                    <h2 class="mt-4 text-4xl sm:text-5xl font-extrabold">
+                        Find the Right Plan for Your Team
+                    </h2>
+                </div>
+
+                <!-- Pricing Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+                    
+                    <!-- Plan 1: Starter -->
+                    <div class="bg-slate-700 p-8 rounded-2xl card-shadow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Starter</h3>
+                            <p class="text-gray-400 mb-6">Best for small teams and quick prototypes.</p>
+                            <div class="flex items-end mb-8">
+                                <span class="text-5xl font-extrabold">$19</span>
+                                <span class="text-xl text-gray-400 ml-1">/month</span>
+                            </div>
+                            <ul class="space-y-3 text-gray-300">
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 mr-2 text-green-400"></i> Up to 5 users</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 mr-2 text-green-400"></i> 10GB storage</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 mr-2 text-green-400"></i> Real-time commenting</li>
+                                <li class="flex items-center"><i data-lucide="x-circle" class="w-5 h-5 mr-2 text-red-400"></i> Dedicated support</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="mt-8 block w-full text-center px-6 py-3 font-semibold rounded-xl bg-slate-600 hover:bg-slate-500 text-white transition duration-300">
+                            Choose Starter
+                        </a>
+                    </div>
+
+                    <!-- Plan 2: Pro (Featured) -->
+                    <div class="bg-aura-primary p-10 rounded-2xl card-shadow transform scale-105 relative">
+                        <span class="absolute top-0 right-0 -mt-3 -mr-3 px-4 py-1 text-xs font-bold rounded-full bg-yellow-400 text-aura-dark shadow-lg">
+                            Most Popular
+                        </span>
+                        <div>
+                            <h3 class="text-3xl font-bold mb-4">Pro</h3>
+                            <p class="text-indigo-200 mb-6">Perfect for growing teams with complex projects.</p>
+                            <div class="flex items-end mb-8">
+                                <span class="text-6xl font-extrabold">$49</span>
+                                <span class="text-2xl text-indigo-200 ml-1">/month</span>
+                            </div>
+                            <ul class="space-y-4 text-white">
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 mr-2 text-yellow-300"></i> Unlimited users</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 mr-2 text-yellow-300"></i> Unlimited storage</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 mr-2 text-yellow-300"></i> Advanced versioning</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 mr-2 text-yellow-300"></i> Priority email support</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="mt-8 block w-full text-center px-6 py-3 font-bold rounded-xl bg-white hover:bg-gray-100 text-aura-primary transition duration-300 transform hover:scale-[1.03]">
+                            Start Pro Plan
+                        </a>
+                    </div>
+
+                    <!-- Plan 3: Enterprise -->
+                    <div class="bg-slate-700 p-8 rounded-2xl card-shadow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Enterprise</h3>
+                            <p class="text-gray-400 mb-6">Tailored for large organizations with custom needs.</p>
+                            <div class="flex items-end mb-8">
+                                <span class="text-5xl font-extrabold">Custom</span>
+                            </div>
+                            <ul class="space-y-3 text-gray-300">
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 mr-2 text-green-400"></i> SSO & security audits</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 mr-2 text-green-400"></i> Custom API limits</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 mr-2 text-green-400"></i> Dedicated account manager</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 mr-2 text-green-400"></i> 99.99% Uptime SLA</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="mt-8 block w-full text-center px-6 py-3 font-semibold rounded-xl bg-slate-600 hover:bg-slate-500 text-white transition duration-300">
+                            Contact Sales
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. FINAL CALL TO ACTION SECTION (CTA) -->
+        <section id="contact" class="py-20 sm:py-24 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-aura-light p-10 sm:p-16 rounded-3xl card-shadow">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-aura-dark mb-4 leading-tight">
+                    Ready to Ship Designs Faster?
+                </h2>
+                <p class="text-xl text-gray-500 mb-8 max-w-2xl mx-auto">
+                    Join thousands of innovative teams worldwide. Start your 14-day free trial today—no credit card required.
+                </p>
+                <a href="#" class="px-10 py-4 text-lg font-bold rounded-xl bg-aura-secondary hover:bg-violet-600 text-white transition duration-300 transform hover:scale-105 shadow-lg shadow-violet-500/30">
+                    Claim Your Free Trial
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-aura-dark pt-16 pb-8 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 border-b border-gray-700 pb-10 mb-8">
+                
+                <!-- Brand Info -->
+                <div class="col-span-2 md:col-span-2">
+                    <a href="#top" class="flex items-center text-2xl font-bold text-white mb-4">
+                        <i data-lucide="sparkles" class="w-6 h-6 mr-2 text-aura-primary"></i>
+                        Aura
+                    </a>
+                    <p class="text-gray-400 text-sm max-w-xs">
+                        The definitive platform for real-time creative collaboration and version control.
+                    </p>
+                </div>
+
+                <!-- Product Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Product</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition duration-150">Features</a></li>
+                        <!-- Pricing link now points to an anchor on this same page -->
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white transition duration-150 font-bold">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-150">Integrations</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-150">Security</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-150">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-150">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-150">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-150">Press Kit</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-150">Help Center</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-150">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-150">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-150">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar: Copyright and Social Icons -->
+            <div class="flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2025 Aura, Inc. All rights reserved.</p>
+                
+                <div class="flex space-x-4 mt-4 sm:mt-0">
+                    <a href="#" aria-label="Twitter"><i data-lucide="twitter" class="w-5 h-5 hover:text-white transition"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" class="w-5 h-5 hover:text-white transition"></i></a>
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram" class="w-5 h-5 hover:text-white transition"></i></a>
+                    <a href="#" aria-label="GitHub"><i data-lucide="github" class="w-5 h-5 hover:text-white transition"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript link -->
+    <script src="script.js"></script>
+</body>
+</html>
