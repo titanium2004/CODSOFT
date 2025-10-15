@@ -44,6 +44,7 @@ A simple personal portfolio built using HTML and CSS. This project showcases per
 
 
 #TASK 2: LANDING PAGE
+
 A simple landing page built using HTML and CSS. This beginner-friendly project helps in understanding basic web structure, layout, and styling concepts.
 
 ---
