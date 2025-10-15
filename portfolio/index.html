@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="home">
+        <div class="header-content">
+            <h1>NITIN KUMAR</h1>
+            <p class="tagline">Web Developer | Creative Problem Solver</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="your_resume.pdf" target="_blank" class="cta-link">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="mypic.jpg" alt="[Your Name's] Profile Picture" class="profile-img">
+            <p class="bio">
+               I am a BTech Computer Science student with strong skills in web development, programming, and data structures. I have hands-on experience building projects using HTML, CSS, JavaScript, React.js, Node.js, and Express, including landing pages, portfolio websites, and interactive quizzes. I am proficient in C++, with practical knowledge of data structures, algorithms, recursion, linked lists, and 8085/8086 microprocessor programming. Additionally, I work with Probability & Statistics using R for data analysis. I enjoy problem-solving and creating clean, functional, and interactive projects that combine logical thinking with creative design.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="section gray-bg">
+        <div class="container">
+            <h2>Skills & Expertise</h2>
+            <ul class="skills-list">
+                <li>Mongo DB</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Docker</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>RESTful APIs</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="mypic.jpg" alt="Project 1 Title">
+                    <h3>Amazon Clone</h3>
+                    <p>A brief description of this project, what technologies were used, and the problem it solved. (e.g., A full-stack e-commerce site built with React and Node.js).</p>
+                    <a href="#" target="_blank">View Live</a> | <a href="#" target="_blank">GitHub</a>
+                </div>
+                <div class="project-card">
+                    <img src="mypic.jpg" alt="Project 2 Title">
+                    <h3>Airbnb clone</h3>
+                    <p>A second project description focusing on a different skillset, like a simple game or a utility application built with pure JavaScript.</p>
+                    <a href="#" target="_blank">View Live</a> | <a href="#" target="_blank">GitHub</a>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section gray-bg">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>I'm currently open to new opportunities. Let's build something great together!</p>
+            <address>
+                Email: <a href="mailto:Nitin.kumar@example.com">Nitin.kumar@example.com</a><br>
+                Phone: <a href="tel:+15555555555">(+91) 123456789</a><br>
+                <a href="your_resume.pdf" download="Your-Resume" class="button">Download Resume (PDF)</a>
+            </address>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Nitin Kumar. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> | <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
